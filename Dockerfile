@@ -12,7 +12,7 @@ COPY . .
 
 RUN cargo build
 
-FROM ubuntu:latest
+FROM ubuntu:24.10
 
 RUN apt-get update && \
     apt-get -y install ca-certificates libudev-dev libssl-dev libsqlite3-dev && \
